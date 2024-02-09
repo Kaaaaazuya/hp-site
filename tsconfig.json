@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "types": ["vitest/globals"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -29,5 +30,6 @@
     ".next/types/**/*.ts",
     "./jest.setup.js"
   ],
+  "typeRoots": "./src/node_modules/@types",
   "exclude": ["node_modules"]
 }
