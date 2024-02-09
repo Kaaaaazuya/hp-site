@@ -2,9 +2,7 @@
 module.exports = {
   mode: 'jit',
   darkMode: false,
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}"
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {},
   },
