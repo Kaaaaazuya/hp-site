@@ -10,11 +10,11 @@ import { List } from '../components/character/List'
 export default function Home() {
   const { data, error, isLoading } = useSWR<Character[]>(urls.charactors, fetcher)
 
-  if (isLoading) return <div>Loading...</div>
+  if (isLoading) return <div className='max-h-full max-w-full bg-black'>Loading...</div>
   if (error) return <div className={error}>Data acquisition failed.</div>
   if (data)
     return (
-      <main className='max-w-full overflow-x-hidden px-12 py-6'>
+      <main className='max-w-full overflow-x-hidden bg-black px-12 py-6'>
         <Title />
         <List charactors={data} />
       </main>

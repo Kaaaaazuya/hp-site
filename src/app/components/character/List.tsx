@@ -8,7 +8,7 @@ type props = {
 export const List = ({ charactors }: props) => {
   return (
     <>
-      <div className='mt-12'>
+      <div className='mt-12 flex-col gap-2'>
         {charactors.map((character) => (
           <ListItem character={character} key={character.id} />
         ))}
