@@ -10,12 +10,12 @@ type Props = {
 export const Detail = ({ character, close }: Props) => {
   return (
     <Modal close={close}>
-      <div className='flex gap-4'>
+      <div className='flex gap-4' style={{ width: '75vw' }}>
         <Image
           src={character.image === '' ? '/noimage.svg' : character.image}
           alt={`${character.name}'s image`}
-          width={120}
-          height={120}
+          width={500}
+          height={500}
         />
         <div className='flex flex-col gap-2'>
           <h2 className='text-xl font-bold'>{character.name}</h2>
